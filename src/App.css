@@ -1,0 +1,151 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background:linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(2, 102, 14, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.mainHeading h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.subHeading h2 {
+  color: #34495e;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.input i {
+  color: #3498db;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.todos {
+  margin-top: 20px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #ecf0f1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo .left, .todo .right {
+  display: flex;
+  align-items: center;
+}
+
+.todo .left input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.todo .right i {
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todo p {
+  margin: 0;
+  color: #34495e;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.input i:hover {
+  color: #2980b9;
+}
+
+.todo .right i:hover {
+  color: #c0392b;
+}
+
+
+
+.finished-task {
+  display: inline-block;
+  color: #ffffff; 
+  font-size: 18px; 
+  max-width: 500px; 
+  width: 100%;
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  background-color: rgba(255, 255, 255, 0.6);; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; 
+  margin-left: 5px;
+}
+
+.finished-task:hover {
+  background-color: #f9f9f9; 
+  color: #2c3e50;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer; 
+}
+
+.green-check {
+  color: green; 
+  margin-right: 5px; 
+}
+
+
+
+@media (max-width: 600px) {
+  .app {
+    padding: 15px;
+  }
+  
+  .input input {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
