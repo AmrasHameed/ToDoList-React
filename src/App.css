@@ -138,14 +138,14 @@ body {
 }
 
 
-
-@media (max-width: 600px) {
-  .app {
-    padding: 15px;
-  }
-  
-  .input input {
-    font-size: 14px;
-    padding: 8px;
-  }
+.error {
+  display: flex;
+  justify-content: center;
+  display: block;
+  color: #c0392b;
+  border-color: #c0392b;
+  height: 30px;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
